@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: scala-dbc.jar scalap.jar scala-library.jar scala-swing.jar
+  scala-compiler.jar jline.jar specs_2.8.1-1.6.7.jar junit-4.8.2.jar
+Main-Class: com.blogspot.miguelinlas3.phd.verification.main.Profile
+

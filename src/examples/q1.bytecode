@@ -1,0 +1,8 @@
+public static void q1(int);
+  Code:
+   Stack=1, Locals=1, Args_size=1
+   0:	iload_0
+   1:	ifle	10
+   4:	iinc	0, -1
+   7:	goto	0
+   10:	return

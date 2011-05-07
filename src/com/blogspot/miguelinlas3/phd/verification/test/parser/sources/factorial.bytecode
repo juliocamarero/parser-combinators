@@ -1,0 +1,110 @@
+Compiled from "Factorial.java"
+class pubs.Factorial extends java.lang.Object
+  SourceFile: "Factorial.java"
+  minor version: 0
+  major version: 46
+  Constant pool:
+const #1 = Method	#12.#23;	//  java/lang/Object."<init>":()V
+const #2 = Method	#11.#24;	//  pubs/Factorial.fact:(I)I
+const #3 = Field	#25.#26;	//  java/lang/System.out:Ljava/io/PrintStream;
+const #4 = class	#27;	//  java/lang/StringBuffer
+const #5 = Method	#4.#23;	//  java/lang/StringBuffer."<init>":()V
+const #6 = String	#28;	//  Result:
+const #7 = Method	#4.#29;	//  java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+const #8 = Method	#4.#30;	//  java/lang/StringBuffer.append:(I)Ljava/lang/StringBuffer;
+const #9 = Method	#4.#31;	//  java/lang/StringBuffer.toString:()Ljava/lang/String;
+const #10 = Method	#32.#33;	//  java/io/PrintStream.println:(Ljava/lang/String;)V
+const #11 = class	#34;	//  pubs/Factorial
+const #12 = class	#35;	//  java/lang/Object
+const #13 = Asciz	<init>;
+const #14 = Asciz	()V;
+const #15 = Asciz	Code;
+const #16 = Asciz	LineNumberTable;
+const #17 = Asciz	fact;
+const #18 = Asciz	(I)I;
+const #19 = Asciz	main;
+const #20 = Asciz	([Ljava/lang/String;)V;
+const #21 = Asciz	SourceFile;
+const #22 = Asciz	Factorial.java;
+const #23 = NameAndType	#13:#14;//  "<init>":()V
+const #24 = NameAndType	#17:#18;//  fact:(I)I
+const #25 = class	#36;	//  java/lang/System
+const #26 = NameAndType	#37:#38;//  out:Ljava/io/PrintStream;
+const #27 = Asciz	java/lang/StringBuffer;
+const #28 = Asciz	Result: ;
+const #29 = NameAndType	#39:#40;//  append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+const #30 = NameAndType	#39:#41;//  append:(I)Ljava/lang/StringBuffer;
+const #31 = NameAndType	#42:#43;//  toString:()Ljava/lang/String;
+const #32 = class	#44;	//  java/io/PrintStream
+const #33 = NameAndType	#45:#46;//  println:(Ljava/lang/String;)V
+const #34 = Asciz	pubs/Factorial;
+const #35 = Asciz	java/lang/Object;
+const #36 = Asciz	java/lang/System;
+const #37 = Asciz	out;
+const #38 = Asciz	Ljava/io/PrintStream;;
+const #39 = Asciz	append;
+const #40 = Asciz	(Ljava/lang/String;)Ljava/lang/StringBuffer;;
+const #41 = Asciz	(I)Ljava/lang/StringBuffer;;
+const #42 = Asciz	toString;
+const #43 = Asciz	()Ljava/lang/String;;
+const #44 = Asciz	java/io/PrintStream;
+const #45 = Asciz	println;
+const #46 = Asciz	(Ljava/lang/String;)V;
+
+{
+pubs.Factorial();
+  Code:
+   Stack=1, Locals=1, Args_size=1
+   0:	aload_0
+   1:	invokespecial	#1; //Method java/lang/Object."<init>":()V
+   4:	return
+  LineNumberTable:
+   line 3: 0
+
+
+static int fact(int);
+  Code:
+   Stack=3, Locals=1, Args_size=1
+   0:	iload_0
+   1:	ifgt	6
+   4:	iconst_1
+   5:	ireturn
+   6:	iload_0
+   7:	iload_0
+   8:	iconst_1
+   9:	isub
+   10:	invokestatic	#2; //Method fact:(I)I
+   13:	imul
+   14:	ireturn
+  LineNumberTable:
+   line 9: 0
+   line 10: 6
+
+
+public static void main(java.lang.String[]);
+  Code:
+   Stack=3, Locals=3, Args_size=1
+   0:	bipush	10
+   2:	istore_1
+   3:	iload_1
+   4:	invokestatic	#2; //Method fact:(I)I
+   7:	istore_2
+   8:	getstatic	#3; //Field java/lang/System.out:Ljava/io/PrintStream;
+   11:	new	#4; //class java/lang/StringBuffer
+   14:	dup
+   15:	invokespecial	#5; //Method java/lang/StringBuffer."<init>":()V
+   18:	ldc	#6; //String Result:
+   20:	invokevirtual	#7; //Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+   23:	iload_2
+   24:	invokevirtual	#8; //Method java/lang/StringBuffer.append:(I)Ljava/lang/StringBuffer;
+   27:	invokevirtual	#9; //Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+   30:	invokevirtual	#10; //Method java/io/PrintStream.println:(Ljava/lang/String;)V
+   33:	return
+  LineNumberTable:
+   line 15: 0
+   line 16: 3
+   line 17: 8
+   line 18: 33
+
+
+}

@@ -1,0 +1,11 @@
+static boolean p(int);
+  Code:
+   Stack=2, Locals=1, Args_size=1
+   0:	iload_0
+   1:	iconst_2
+   2:	idiv
+   3:	ifne	8
+   6:	iconst_1
+   7:	ireturn
+   8:	iconst_0
+   9:	ireturn

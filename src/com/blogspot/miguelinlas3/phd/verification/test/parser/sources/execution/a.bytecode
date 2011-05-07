@@ -1,0 +1,9 @@
+int incr(int);
+  Code:
+   Stack=2, Locals=2, Args_size=2
+   0:	iload_1
+   1:	iconst_1
+   2:	iadd
+   3:	dup
+   4:	istore_1
+   5:	ireturn

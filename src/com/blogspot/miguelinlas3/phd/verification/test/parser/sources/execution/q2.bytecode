@@ -1,0 +1,29 @@
+public static int q2(int, int);
+  Code:
+   Stack=2, Locals=6, Args_size=2
+   0:	iconst_0
+   1:	istore_2
+   2:	iload_0
+   3:	istore_3
+   4:	iload_3
+   5:	ifle	43
+   8:	iconst_0
+   9:	istore	4
+   11:	iload_1
+   12:	istore	5
+   14:	iload	5
+   16:	ifle	32
+   19:	iload	4
+   21:	iload	5
+   23:	iadd
+   24:	istore	4
+   26:	iinc	5, -1
+   29:	goto	14
+   32:	iload_2
+   33:	iload	4
+   35:	iadd
+   36:	istore_2
+   37:	iinc	3, -1
+   40:	goto	4
+   43:	iload_2
+   44:	ireturn

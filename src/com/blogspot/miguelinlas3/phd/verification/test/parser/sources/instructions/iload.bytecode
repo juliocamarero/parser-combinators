@@ -1,0 +1,4 @@
+type fun(int);
+  Code:
+Stack=2, Locals=3, Args_size=1
+4: iload_2
